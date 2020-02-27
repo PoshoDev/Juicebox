@@ -1,2 +1,2 @@
-# Juicebox
-Automated time management tool. 🧃
+# Juicebox 🧃
+Automated time management tool.
