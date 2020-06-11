@@ -1,8 +1,12 @@
 {
-    "id": "fd519876-0860-4f06-8d5a-edd976807f7e",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "csv_save",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "CSV_Manager",
+    "path": "folders/Scripts/CSV_Manager.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "csv_save",
+  "tags": [],
+  "resourceType": "GMScript",
 }
