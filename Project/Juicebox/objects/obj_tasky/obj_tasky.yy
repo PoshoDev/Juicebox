@@ -2,7 +2,7 @@
     "id": "c90a0356-f31e-fb1f-a835-e6947aa45a21",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_task",
+    "name": "obj_tasky",
     "eventList": [
         {
             "id": "e258ddba-5c31-09a0-c458-43d5d0026cbe",

@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "3e2f7c12-0517-1328-5c2f-71effa4b18b3",
+            "Value": {
+                "id": "facfd817-5a03-7125-95ac-2b6f650b23f6",
+                "resourcePath": "objects\\obj_global_2\\obj_global_2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "48cf19d4-d531-8220-1ee0-470e022a2ee1",
             "Value": {
                 "id": "2a553b96-f721-3bad-96e0-830dea9ae92f",
@@ -116,6 +124,14 @@
                 "id": "5be430cd-dc88-4e46-8c8c-ec52dacee02a",
                 "resourcePath": "views\\657359e8-c98d-485f-9887-22b229256b8e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "71f62684-08ce-4db1-9390-6b122b15dedc",
+            "Value": {
+                "id": "a4632b5b-9393-4bbe-b2b8-190902f25de0",
+                "resourcePath": "rooms\\room01\\room01.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -290,7 +306,7 @@
             "Key": "c90a0356-f31e-fb1f-a835-e6947aa45a21",
             "Value": {
                 "id": "fa26926e-791c-bfa5-cda3-07f224443a3e",
-                "resourcePath": "objects\\obj_task\\obj_task.yy",
+                "resourcePath": "objects\/obj_tasky\/obj_tasky.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -316,6 +332,14 @@
                 "id": "8a7a9d11-fd33-42ef-ad95-8822d2546d84",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e9ef0c37-51bd-978a-5d5f-0ba2eec2f6e0",
+            "Value": {
+                "id": "29b07624-067d-9730-da04-b4849d5b12b6",
+                "resourcePath": "scripts\\obj_task\\obj_task.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -371,7 +395,8 @@
         "f3869a92-7e14-24fd-3adb-131e779990df",
         "9d570dd3-faff-8d38-7c16-c1b42f235437",
         "0ec0fbb3-eb61-7b17-3655-0fa86ad425e0",
-        "f794a87d-bb27-44b5-733f-4c90eb1469b4"
+        "f794a87d-bb27-44b5-733f-4c90eb1469b4",
+        "e9ef0c37-51bd-978a-5d5f-0ba2eec2f6e0"
     ],
     "tutorial": ""
 }

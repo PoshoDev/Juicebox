@@ -1,8 +1,9 @@
+/// @param file
 ///bulk_start(filename)
 
 var file = argument0;
 
-enum col
+/*enum col
 {
     category,
     type_,
@@ -18,7 +19,7 @@ enum col
     time_est,
     repeats,
     cleared
-};
+};*/
 
 if (!file_exists(file+".csv"))
 {

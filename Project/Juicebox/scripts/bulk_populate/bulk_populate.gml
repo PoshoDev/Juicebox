@@ -5,7 +5,7 @@ global.last = noone;
 
 for (var i=1; i<array_height_2d(global.bulk); i++)
 {
-    var obj = instance_create_depth(0, 0, 0, obj_task);
+    /*var obj = instance_create_depth(0, 0, 0, obj_task);
     
     obj.category =      global.bulk[i, col.category];
     obj.type =          global.bulk[i, col.type_];
@@ -26,5 +26,5 @@ for (var i=1; i<array_height_2d(global.bulk); i++)
     if (global.last != noone)
         obj.y = global.last.y+100+8;
     
-    global.last = obj;
+    global.last = obj;*/
 }
