@@ -1,3 +1,10 @@
+#macro block_add 8
+#macro block_min 8
+#macro block_max 128
+
+#macro popup_width 600
+#macro popup_height 800
+
 enum dt
 {
     category,
@@ -19,3 +26,15 @@ enum dt
 
 globalvar data;
 data = ds_grid_create(dt.LENGTH, 0);
+
+
+enum md { standard, addnew };
+enum vw { gantt };
+
+globalvar mode;
+mode = md.standard;
+
+globalvar block_size;
+block_size = 16;
+
+task_new = noone;
