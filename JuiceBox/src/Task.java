@@ -25,11 +25,16 @@ public class Task
 	public boolean cleared = false;
 	
 	
-	Task() {}
+	Task()
+	{
+		x = 0;
+		y = 0;
+		length = Control.block_size * 5;
+	}
 	
 	public void Draw(Graphics g)
 	{
 		g.setColor(Color.ORANGE);
-		g.fillRoundRect(x, y, length, Control.block_size, 8, 8);
+		g.fillRect(x, y, length, Control.block_size);
 	}
 }

@@ -20,13 +20,16 @@ public class Control
 	enum vw { gantt };
 	private vw view = vw.gantt;
 	
-	private Task task_temp = null;
+	Task task_temp = new Task();
 	
 	
 	// Events
 	public void Draw(Graphics g)
 	{
 		DrawGanttBackground(g);
+		
+		if (task_temp != null)
+			task_temp.Draw(g);
 	}
 	
 	
@@ -39,7 +42,7 @@ public class Control
 		
 		// Gantt's Columns
 		g.setColor(Color.DARK_GRAY);
-		for (int i=block_size; i<500/*window_width*/; i+=block_size*2)
+		for (int i=block_size; i<500; i+=block_size*2)
 			g.fillRect(i, 0, block_size, 500/*window_height*/);
 		
 		// Gantt's Rows
