@@ -1,5 +1,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.event.MouseEvent;
 
 public class Control
 {
@@ -20,16 +22,30 @@ public class Control
 	enum vw { gantt };
 	private vw view = vw.gantt;
 	
-	Task task_temp = new Task();
+	Task task_temp;
 	
 	
-	// Events
-	public void Draw(Graphics g)
+	// Create
+	public Control()
 	{
-		DrawGanttBackground(g);
+		task_temp = new Task();
+	}
+	
+	
+	// Step
+	public void update()
+	{
+		
+	}
+	
+	
+	// Draw
+	public void draw(Graphics2D g2d)
+	{
+		DrawGanttBackground(g2d);
 		
 		if (task_temp != null)
-			task_temp.Draw(g);
+			task_temp.draw(g2d);
 	}
 	
 	
@@ -50,5 +66,13 @@ public class Control
 		for (int i=block_size; i<500/*window_height*/; i+=block_size)
 			g.drawLine(0,  i, 500/*room_width*/, i);
 		
+	}
+	
+	// Mouse Pressed
+	public void mousePressed(MouseEvent e)
+	{
+		// This should work with an array loop later on.
+		
+		task_temp.color = Color.BLUE;
 	}
 }

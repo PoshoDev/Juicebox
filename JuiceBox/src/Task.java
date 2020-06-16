@@ -1,5 +1,10 @@
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import javax.swing.JPanel;
+
 
 public class Task
 {
@@ -7,6 +12,7 @@ public class Task
 	public int x;
 	public int y;
 	public int length;
+	public Color color;
 	
 	// Task Variables
 	public int category;
@@ -25,16 +31,29 @@ public class Task
 	public boolean cleared = false;
 	
 	
-	Task()
+	// Create
+	public Task()
 	{
 		x = 0;
 		y = 0;
 		length = Control.block_size * 5;
+		color = Color.orange;
+		//this.addMouseListener(new MouseInput(this));
 	}
 	
-	public void Draw(Graphics g)
+	
+	// Step
+	public void update()
 	{
-		g.setColor(Color.ORANGE);
-		g.fillRect(x, y, length, Control.block_size);
+		
+	}
+	
+	
+	
+	// Draw
+	public void draw(Graphics2D g2d)
+	{
+		g2d.setColor(color);
+		g2d.fillRect(x, y, length, Control.block_size);
 	}
 }
